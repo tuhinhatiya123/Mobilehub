@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>যোগাযোগ — Mobilehub.com.bd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#FFFFFF; --panel:#F6F8F9; --panel-raised:#EDF1F3; --line:#DEE4E8;
+    --signal:#0E9C82; --signal-dim:#B7EAE0; --price:#D97706;
+    --text-hi:#12181F; --text-mid:#5B6672; --text-low:#77828E;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--ink); color:var(--text-hi); font-family:'Hind Siliguri','Inter',sans-serif; min-height:100vh;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit; text-decoration:none;}
+  header{border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(255,255,255,0.92); backdrop-filter:blur(8px); z-index:10;}
+  .header-inner{max-width:820px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between;}
+  .logo{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px;}
+  nav a{margin-left:18px; font-size:14px; color:var(--text-mid); font-weight:500;}
+  nav a:hover{color:var(--signal);}
+  main{max-width:820px; margin:0 auto; padding:48px 24px 80px;}
+  h1{font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; margin-bottom:10px; letter-spacing:-0.01em;}
+  .subtitle{color:var(--text-mid); font-size:15px; margin-bottom:36px;}
+  p{color:var(--text-mid); font-size:15.5px; line-height:1.85; margin-bottom:14px;}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:28px 0;}
+  @media(max-width:600px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px;}
+  .contact-card .icon{font-size:24px; margin-bottom:10px;}
+  .contact-card h3{font-family:'Space Grotesk',sans-serif; font-size:16px; margin-bottom:6px;}
+  .contact-card p{margin:0; font-size:14px;}
+  .contact-card a.value{color:var(--signal); font-weight:600; font-family:'JetBrains Mono',monospace; font-size:14px;}
+  .form-box{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px; margin-top:32px;}
+  label{display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:var(--text-hi);}
+  input, textarea, select{
+    width:100%; background:var(--ink); border:1px solid var(--line); border-radius:8px;
+    padding:11px 13px; font-size:14px; font-family:'Hind Siliguri',sans-serif; color:var(--text-hi); margin-bottom:16px; outline:none;
+  }
+  input:focus, textarea:focus, select:focus{border-color:var(--signal);}
+  textarea{resize:vertical; min-height:110px;}
+  .btn{background:var(--signal); color:#fff; border:none; padding:12px 24px; border-radius:8px; font-weight:700; font-size:14.5px; cursor:pointer; font-family:'Hind Siliguri',sans-serif;}
+  .note{font-size:12.5px; color:var(--text-low); margin-top:10px;}
+  footer{border-top:1px solid var(--line); padding:28px 24px; text-align:center; color:var(--text-low); font-size:12px; font-family:'JetBrains Mono',monospace;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Mobile<span style="color:var(--signal)">hub</span></a>
+    <nav>
+      <a href="index.html">হোম</a>
+      <a href="about.html">আমাদের সম্পর্কে</a>
+      <a href="contact.html">যোগাযোগ</a>
+      <a href="privacy.html">প্রাইভেসি পলিসি</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>যোগাযোগ করুন</h1>
+  <p class="subtitle">কোনো তথ্যে ভুল থাকলে, নতুন মডেল যোগ করার অনুরোধ থাকলে, বা যেকোনো মতামত থাকলে আমাদের জানান</p>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <h3>ইমেইল</h3>
+      <p>সাধারণ প্রশ্ন বা তথ্য সংশোধনের জন্য</p>
+      <a class="value" href="mailto:contact@mobilehub.com.bd">contact@mobilehub.com.bd</a>
+    </div>
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>ঠিকানা</h3>
+      <p>বাংলাদেশ থেকে পরিচালিত একটি স্বাধীন প্ল্যাটফর্ম</p>
+      <span class="value">ঢাকা, বাংলাদেশ</span>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <h3 style="font-family:'Space Grotesk',sans-serif; margin-bottom:18px; font-size:18px;">সরাসরি মেসেজ পাঠান</h3>
+    <form action="https://formsubmit.co/contact@mobilehub.com.bd" method="POST">
+      <label for="name">আপনার নাম</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">ইমেইল ঠিকানা</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">বিষয়</label>
+      <select id="subject" name="subject">
+        <option>তথ্য সংশোধনের অনুরোধ</option>
+        <option>নতুন মডেল যোগ করার অনুরোধ</option>
+        <option>সাধারণ মতামত</option>
+        <option>অন্যান্য</option>
+      </select>
+
+      <label for="message">বার্তা</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="btn">পাঠিয়ে দিন</button>
+      <p class="note">* এই ফর্মটা FormSubmit সার্ভিস ব্যবহার করে সরাসরি ইমেইলে পাঠাবে। প্রথমবার পাঠানোর পর আপনার ইমেইলে একটা নিশ্চিতকরণ লিংক আসবে সেটা যাচাই করার জন্য।</p>
+    </form>
+  </div>
+</main>
+
+<footer>MOBILEHUB.COM.BD © ২০২৬ — শুধুমাত্র তথ্যের জন্য নির্মিত একটি ডেমো ওয়েবসাইট<br>Created by MANSUR, YUNUS, SAGOR</footer>
+
+</body>
+</html>
